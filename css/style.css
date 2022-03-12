@@ -1,9 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0 20px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-family: "Shrikhand", cursive;
+  font-weight: 800;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.header-logo {
+  width: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */
