@@ -4,16 +4,19 @@
   box-sizing: border-box;
 }
 
-main {
-  margin: 0 20px;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
   font-weight: 800;
+  font-size: 25px;
+}
+
+button {
+  color: white;
+  background-color: #9356DC;
+  padding: 20px;
 }
 
 .header {
@@ -24,6 +27,38 @@ h1 {
 
 .header-logo {
   width: 40%;
+}
+
+.location {
+  background-color: #EAEAEA;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -2px 5px grey;
+}
+.location p {
+  color: #353535;
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.introduction {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding-top: 40px;
+}
+.introduction h1 {
+  margin: 0 30px;
+}
+.introduction p {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+.introduction button {
+  margin: 20px 30px 40px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
