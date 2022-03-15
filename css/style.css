@@ -102,5 +102,8 @@ button {
 .functioning {
   margin: 50px 20px;
 }
+.functioning h1 {
+  margin-bottom: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */
