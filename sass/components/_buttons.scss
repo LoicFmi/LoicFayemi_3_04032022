@@ -1,5 +1,10 @@
 button {
     color: white;
-    background-color: $colour-primary;
+    background: rgb(255,121,218);
+    background: linear-gradient(151deg, $colour-secondary 0%, $colour-primary 100%);
     padding: 20px;
+    border: none;
+    border-radius: 50px ;
+    box-shadow: 0px 5px 10px grey;
+    padding: 18px 22px;
 }
