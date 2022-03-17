@@ -10,8 +10,10 @@ footer {
     & .footer-content {
         & div {
             display: flex;
+            align-items: center;
             & i{
                 margin-right: 10px;
+                font-size: 12px;
             }
         }
         & p {

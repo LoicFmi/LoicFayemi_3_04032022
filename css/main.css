@@ -168,10 +168,14 @@ footer .footer-content div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footer-content div i {
   margin-right: 10px;
+  font-size: 12px;
 }
 
 footer .footer-content p {
