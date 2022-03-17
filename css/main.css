@@ -148,8 +148,34 @@ button {
   margin: 20px 0;
 }
 
-.header-logo {
+.header .header-logo {
   width: 40%;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 40px 20px 20px 20px;
+}
+
+footer .footer-logo {
+  -webkit-filter: invert(100%);
+  width: 35%;
+  margin-bottom: 20px;
+}
+
+footer .footer-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-content div i {
+  margin-right: 10px;
+}
+
+footer .footer-content p {
+  margin-bottom: 10px;
 }
 
 .location {
