@@ -15,7 +15,7 @@
 .introduction {
     background-color: #F2F2F2;
     text-align: center;
-    padding-top: 40px;
+    padding: 40px 10px;
     & h1 {
         margin: 0 30px;
     }
@@ -25,8 +25,8 @@
         font-weight: 300;
         padding-top: 20px;
     }
-    & button {
-        margin: 20px 30px 40px 30px;
+    & .explore {
+        margin: 40px 0 30px 0;
     }
 }
 
@@ -42,6 +42,42 @@
     background-color: #F2F2F2;
     & h1 {
         margin-bottom: 30px;
+    }
+
+}
+
+
+// Tablet
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+// Desktop
+
+@media screen and (min-width: 992px) {
+
+    .functioning {
+        & .functioning-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+        & .functioning-card {
+            width: 30%;
+        }
+    }
+
+    .restaurants {
+        & .restaurant-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            & .restaurant-card {
+                width: 45%;
+            }
+        }
     }
 
 }
