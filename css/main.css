@@ -30,7 +30,6 @@ h2 {
 
 .explore-btn {
   color: white;
-  background: #ff79da;
   background: linear-gradient(151deg, #ff79da 0%, #9356dc 100%);
   border: none;
   border-radius: 50px;
@@ -181,15 +180,15 @@ h2 {
   font-weight: 100;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #0065FC), color-stop(50%, white));
-  background: linear-gradient(to top, #0065FC 50%, white 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #9356dc), color-stop(50%, white));
+  background: linear-gradient(to top, #9356dc 50%, white 50%);
   background-size: 100% 200%;
   background-position: top;
 }
 
 .restaurant-card i:hover {
   background-position: bottom;
-  color: blue;
+  color: transparent;
 }
 
 .header {

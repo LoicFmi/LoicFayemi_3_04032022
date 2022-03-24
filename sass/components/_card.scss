@@ -90,12 +90,13 @@
         margin-right: 15px;
         font-weight: 100;
         transition: all .3s ease-out;
-        background: linear-gradient(to top, #0065FC 50%, white 50%);
+        background: linear-gradient(to top, $colour-primary 50%, white 50%);
+        // background: linear-gradient(151deg, $colour-secondary 0%, $colour-primary 100%);
         background-size: 100% 200%;
         background-position: top;
     }
     & i:hover {
         background-position: bottom;
-        color: blue;
+        color: transparent;
     }
 }
