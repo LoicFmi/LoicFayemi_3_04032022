@@ -8,16 +8,16 @@ footer {
         margin-bottom: 20px;
     }
     & .footer-content {
-        & div {
+        display: flex;
+        flex-direction: column;
+        & a {
             display: flex;
             align-items: center;
+            margin-bottom: 7px;
             & i{
                 margin-right: 10px;
                 font-size: 12px;
             }
-        }
-        & p {
-            margin-bottom: 10px;
         }
     }
 }

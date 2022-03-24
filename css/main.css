@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -174,6 +178,18 @@ h2 {
 .restaurant-card i {
   font-size: 25px;
   margin-right: 15px;
+  font-weight: 100;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #0065FC), color-stop(50%, white));
+  background: linear-gradient(to top, #0065FC 50%, white 50%);
+  background-size: 100% 200%;
+  background-position: top;
+}
+
+.restaurant-card i:hover {
+  background-position: bottom;
+  color: blue;
 }
 
 .header {
@@ -202,22 +218,29 @@ footer .footer-logo {
   margin-bottom: 20px;
 }
 
-footer .footer-content div {
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-content a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 7px;
 }
 
-footer .footer-content div i {
+footer .footer-content a i {
   margin-right: 10px;
   font-size: 12px;
-}
-
-footer .footer-content p {
-  margin-bottom: 10px;
 }
 
 .location {

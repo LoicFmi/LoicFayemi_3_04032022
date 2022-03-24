@@ -88,5 +88,14 @@
     & i {
         font-size: 25px;
         margin-right: 15px;
+        font-weight: 100;
+        transition: all .3s ease-out;
+        background: linear-gradient(to top, #0065FC 50%, white 50%);
+        background-size: 100% 200%;
+        background-position: top;
+    }
+    & i:hover {
+        background-position: bottom;
+        color: blue;
     }
 }
