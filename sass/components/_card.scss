@@ -52,11 +52,21 @@
     box-shadow: 0px 2px 5px grey;
     margin-bottom: 25px;
     height: 250px;
-    & img {
+    overflow: hidden;
+    & .img-container {
         height: 70%;
+        width: 100%;
+        overflow: hidden;
+    }
+    & img {
+        height: 100%;
         width: 100%;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
+        transition: transform .4s;
+    }
+    & img:hover {
+        transform: scale(1.1);
     }
     & .new {
         position: absolute;
@@ -85,18 +95,27 @@
     &:hover {
         box-shadow: 0px 5px 10px grey;
     }
-    & i {
+    & .heart {
+        display: block;
+        position: relative;
         font-size: 25px;
-        margin-right: 15px;
-        font-weight: 100;
-        transition: all .3s ease-out;
-        background: linear-gradient(to top, $colour-primary 50%, white 50%);
-        // background: linear-gradient(151deg, $colour-secondary 0%, $colour-primary 100%);
-        background-size: 100% 200%;
-        background-position: top;
+        // margin-right: 15px;
+        // font-weight: 100;
+        & .fas, .far {
+            position: absolute;
+            bottom: -15px;
+            right: 10px;
+        }
+        & .fas {
+            transition: opacity .3s ease-in;
+            color: $colour-primary;
+            opacity: 0;
+        }
     }
-    & i:hover {
-        background-position: bottom;
-        color: transparent;
+    & .heart:hover .fas {
+        opacity: 1;
+    }
+    & .heart:hover .far {
+        color: $colour-primary;
     }
 }
