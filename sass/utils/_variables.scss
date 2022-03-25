@@ -1,0 +1,6 @@
+$colour-primary: rgb(147, 86, 220);
+$colour-primary-light: rgba(147, 86, 220, .1);
+$colour-secondary: rgb(255, 121, 218);
+$colour-secondary-light: rgba(255, 121, 218, .9);
+$colour-tertiary: rgb(153, 226, 208);
+$colour-gradient: linear-gradient(151deg, $colour-secondary 0%, $colour-primary 100%);

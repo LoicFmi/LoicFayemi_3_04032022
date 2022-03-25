@@ -1,0 +1,23 @@
+footer {
+    background-color: #353535;
+    color: white;
+    padding: 40px 20px 20px 20px;
+    & .footer-logo {
+        -webkit-filter: invert(100%);
+        width: 35%;
+        margin-bottom: 20px;
+    }
+    & .footer-content {
+        display: flex;
+        flex-direction: column;
+        & a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 7px;
+            & i{
+                margin-right: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+}
