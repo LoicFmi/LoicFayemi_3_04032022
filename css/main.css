@@ -256,6 +256,43 @@ h3 {
   font-weight: 600;
 }
 
+.menu-cards:hover {
+  -webkit-animation: slide-in .3s;
+          animation: slide-in .3s;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    transfrom: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transfrom: translateY(-25%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transfrom: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transfrom: translateY(-25%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;

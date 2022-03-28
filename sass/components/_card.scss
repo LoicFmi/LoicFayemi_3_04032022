@@ -146,6 +146,22 @@
         }
     }
     &:hover {
-
+        animation: slide-in .3s;
     }
 }
+
+@keyframes slide-in {
+    0% {
+        transfrom: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transfrom: translateY(-25%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}
+
