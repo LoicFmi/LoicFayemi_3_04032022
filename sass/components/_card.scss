@@ -136,6 +136,7 @@
         align-items: center;
         padding: 15px 10px;
         margin: 15px -8px;
+        animation: slide-in 8s;
         & h2 {
             margin-bottom: 5px;
         } 
@@ -146,21 +147,21 @@
         }
     }
     &:hover {
-        animation: slide-in .3s;
+
     }
 }
 
 @keyframes slide-in {
     0% {
-        transfrom: translateY(0);
-        opacity: 0;
+        transfrom: translateY(100px);
+        opacity: .1;
     }
     50% {
-        transfrom: translateY(-25%);
-        opacity: 0.5;
+        transfrom: translateY(50px);
+        opacity: .5;
     }
     100% {
-        transform: translateY(-50%);
+        transform: translateY(100px);
         opacity: 1;
     }
 }

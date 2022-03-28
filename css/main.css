@@ -244,6 +244,8 @@ h3 {
           align-items: center;
   padding: 15px 10px;
   margin: 15px -8px;
+  -webkit-animation: slide-in 8s;
+          animation: slide-in 8s;
 }
 
 .menu-cards .menu-card h2 {
@@ -256,39 +258,34 @@ h3 {
   font-weight: 600;
 }
 
-.menu-cards:hover {
-  -webkit-animation: slide-in .3s;
-          animation: slide-in .3s;
-}
-
 @-webkit-keyframes slide-in {
   0% {
-    transfrom: translateY(0);
-    opacity: 0;
+    transfrom: translateY(100px);
+    opacity: .1;
   }
   50% {
-    transfrom: translateY(-25%);
-    opacity: 0.5;
+    transfrom: translateY(50px);
+    opacity: .5;
   }
   100% {
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     opacity: 1;
   }
 }
 
 @keyframes slide-in {
   0% {
-    transfrom: translateY(0);
-    opacity: 0;
+    transfrom: translateY(100px);
+    opacity: .1;
   }
   50% {
-    transfrom: translateY(-25%);
-    opacity: 0.5;
+    transfrom: translateY(50px);
+    opacity: .5;
   }
   100% {
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     opacity: 1;
   }
 }
