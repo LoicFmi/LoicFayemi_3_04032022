@@ -23,7 +23,7 @@
     }
     & .menu-stage {
         margin-bottom: 50px;
-        & .stage{
+        & .stage-title {
             text-transform: uppercase;
             margin-bottom: 30px;
             & span {
@@ -45,19 +45,27 @@
 
 // Tablet
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
 }
 
 
 // Desktop
 
-@media screen and (min-width: 992px) {
-    // .menu-cards {
-    //     display: flex;
-    //     & .menu-card {
-    //         width: 30%;
-    //         margin-right: 10px;
-    //     }
-    // }
+@media (min-width: 992px) {
+    .menu-stage {
+        margin: 0 30px;
+        & .stage-title {
+            display: flex;
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+        & .menu-cards {
+            display: flex;
+            justify-content: space-between;
+            & .menu-card {
+                width: 30%;
+            }
+        }
+    }
 }

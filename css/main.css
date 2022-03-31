@@ -223,15 +223,15 @@ h3 {
   color: #9356dc;
 }
 
-.menu-cards {
+.stages {
   margin-bottom: 40px;
 }
 
-.menu-cards .stage {
+.stages .stage-title {
   opacity: 0;
 }
 
-.menu-cards .menu-card {
+.stages .menu-card {
   background-color: white;
   border-radius: 15px;
   -webkit-box-shadow: 0px 2px 10px lightgrey;
@@ -251,38 +251,38 @@ h3 {
   opacity: 0;
 }
 
-.menu-cards .menu-card h2 {
+.stages .menu-card h2 {
   margin-bottom: 5px;
 }
 
-.menu-cards .menu-card .menu-price {
+.stages .menu-card .menu-price {
   margin-top: 25px;
   margin-right: 10px;
   font-weight: 600;
 }
 
-.menu-cards .slide-1 {
+.stages .slide-1 {
   -webkit-transform: translateY(40%);
           transform: translateY(40%);
   -webkit-animation: slide-in 1s 1s ease-in-out forwards;
           animation: slide-in 1s 1s ease-in-out forwards;
 }
 
-.menu-cards .slide-2 {
+.stages .slide-2 {
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
   -webkit-animation: slide-in 1s 1.2s ease-in-out forwards;
           animation: slide-in 1s 1.2s ease-in-out forwards;
 }
 
-.menu-cards .slide-3 {
+.stages .slide-3 {
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
   -webkit-animation: slide-in 1s 1.4s ease-in-out forwards;
           animation: slide-in 1s 1.4s ease-in-out forwards;
 }
 
-.menu-cards .slide-4 {
+.stages .slide-4 {
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
   -webkit-animation: slide-in 1s 1.6s ease-in-out forwards;
@@ -495,12 +495,12 @@ footer .footer-content a i {
   margin-bottom: 50px;
 }
 
-.menu .menu-stage .stage {
+.menu .menu-stage .stage-title {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 
-.menu .menu-stage .stage span {
+.menu .menu-stage .stage-title span {
   border-bottom: solid 3px #99e2d0;
   padding-bottom: 5px;
 }
@@ -517,5 +517,29 @@ footer .footer-content a i {
 
 .menu .order a {
   padding: 16px 50px;
+}
+
+@media (min-width: 992px) {
+  .menu-stage {
+    margin: 0 30px;
+  }
+  .menu-stage .stage-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .menu-stage .menu-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu-stage .menu-cards .menu-card {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
