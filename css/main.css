@@ -218,10 +218,13 @@ h3 {
 
 .heart:hover .fas {
   opacity: 1;
+  -webkit-animation: color-change 2s .5s ease-in-out infinite;
+          animation: color-change 2s .5s ease-in-out infinite;
 }
 
 .heart:hover .far {
-  color: #9356dc;
+  -webkit-animation: color-change 2s .5s ease-in-out infinite;
+          animation: color-change 2s .5s ease-in-out infinite;
 }
 
 .stages {
@@ -377,6 +380,24 @@ h3 {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    color: #9356dc;
+  }
+  50% {
+    color: #ff79da;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: #9356dc;
+  }
+  50% {
+    color: #ff79da;
   }
 }
 
@@ -627,7 +648,7 @@ footer .footer-content a i {
             justify-content: space-between;
   }
   .menu .stages .menu-cards .menu-card {
-    width: 30%;
+    width: 33%;
   }
 }
 /*# sourceMappingURL=main.css.map */
