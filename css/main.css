@@ -551,7 +551,7 @@ footer {
 
 footer .footer-logo {
   -webkit-filter: invert(100%);
-  width: 35%;
+  width: 150px;
   margin-bottom: 20px;
 }
 
@@ -624,7 +624,7 @@ footer .footer-content a i {
 }
 
 .functioning {
-  margin: 50px 20px;
+  padding: 50px 20px;
 }
 
 .functioning h1 {
@@ -641,6 +641,10 @@ footer .footer-content a i {
 }
 
 @media screen and (min-width: 992px) {
+  .functioning, .restaurants-content {
+    margin: auto;
+    max-width: 1440px;
+  }
   .functioning .functioning-cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -666,7 +670,7 @@ footer .footer-content a i {
         flex-wrap: wrap;
   }
   .restaurants .restaurant-cards .restaurant-card {
-    width: 45%;
+    width: 48%;
   }
 }
 
@@ -677,7 +681,7 @@ footer .footer-content a i {
 
 .banner img {
   height: 100%;
-  max-height: 400px;
+  max-height: 350px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -686,6 +690,8 @@ footer .footer-content a i {
 .menu {
   position: relative;
   z-index: 1;
+  margin: auto;
+  max-width: 1440px;
   margin-top: -50px;
   padding: 0 20px;
   background-color: #F2F2F2;

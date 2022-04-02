@@ -3,7 +3,7 @@
     max-height: 300px;
     & img {
         height: 100%;
-        max-height: 400px;
+        max-height: 350px;
         width: 100%;
         object-fit: cover;
     }
@@ -12,6 +12,8 @@
 .menu {
     position: relative;
     z-index: 1;
+    margin: auto;
+    max-width: 1440px;
     margin-top: -50px;
     padding: 0 20px;
     background-color: #F2F2F2;
