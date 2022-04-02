@@ -191,19 +191,19 @@
     }
     & .slide-1 {
         transform: translateY(40%);
-        animation: slide-in 1s 1s ease-in-out forwards;
+        animation: slide-in 1s .6s ease-in-out forwards;
     }
     & .slide-2 {
         transform: translateY(20%);
-        animation: slide-in 1s 1.2s ease-in-out forwards;
+        animation: slide-in 1s .8s ease-in-out forwards;
     }
     & .slide-3 {
         transform: translateY(20%);
-        animation: slide-in 1s 1.4s ease-in-out forwards;
+        animation: slide-in 1s 1s ease-in-out forwards;
     }
     & .slide-4 {
         transform: translateY(20%);
-        animation: slide-in 1s 1.6s ease-in-out forwards;
+        animation: slide-in 1s 1.2s ease-in-out forwards;
     }
 }
 
