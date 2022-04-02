@@ -28,7 +28,13 @@ h2 {
   font-size: 18px;
 }
 
-.explore-btn {
+h3 {
+  font-family: 'shrikhand', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.btn {
   color: white;
   background: linear-gradient(151deg, #ff79da 0%, #9356dc 100%);
   border: none;
@@ -38,8 +44,8 @@ h2 {
   padding: 16px 22px;
 }
 
-.explore-btn:hover {
-  background: rgba(255, 121, 218, 0.9);
+.btn:hover {
+  opacity: .7;
   -webkit-box-shadow: 0px 5px 10px grey;
           box-shadow: 0px 5px 10px grey;
 }
@@ -116,8 +122,8 @@ h2 {
   position: relative;
   background-color: white;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 2px 5px grey;
-          box-shadow: 0px 2px 5px grey;
+  -webkit-box-shadow: 0px 2px 5px lightgrey;
+          box-shadow: 0px 2px 5px lightgrey;
   margin-bottom: 25px;
   height: 250px;
   overflow: hidden;
@@ -178,7 +184,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 10px;
+  margin: 15px 10px;
 }
 
 .restaurant-card .restaurant-location {
@@ -186,35 +192,330 @@ h2 {
 }
 
 .restaurant-card:hover {
-  -webkit-box-shadow: 0px 5px 10px grey;
-          box-shadow: 0px 5px 10px grey;
+  -webkit-box-shadow: 0px 5px 10px lightgrey;
+          box-shadow: 0px 5px 10px lightgrey;
 }
 
-.restaurant-card .heart {
+.heart {
   display: block;
   position: relative;
   font-size: 25px;
+  cursor: pointer;
 }
 
-.restaurant-card .heart .fas, .restaurant-card .heart .far {
+.heart .fas, .heart .far {
   position: absolute;
   bottom: -15px;
   right: 10px;
 }
 
-.restaurant-card .heart .fas {
+.heart .fas {
   -webkit-transition: opacity .3s ease-in;
   transition: opacity .3s ease-in;
   color: #9356dc;
   opacity: 0;
 }
 
-.restaurant-card .heart:hover .fas {
+.heart:hover .fas {
   opacity: 1;
+  -webkit-animation: color-change 2s .5s ease-in-out infinite;
+          animation: color-change 2s .5s ease-in-out infinite;
 }
 
-.restaurant-card .heart:hover .far {
-  color: #9356dc;
+.heart:hover .far {
+  -webkit-animation: color-change 2s .5s ease-in-out infinite;
+          animation: color-change 2s .5s ease-in-out infinite;
+}
+
+.stages {
+  margin-bottom: 40px;
+}
+
+.stages .stage-title {
+  opacity: 0;
+}
+
+.stages .menu-card {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 10px lightgrey;
+          box-shadow: 0px 2px 10px lightgrey;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px -8px;
+  opacity: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.stages .menu-card .menu-text {
+  overflow: hidden;
+  padding: 15px 10px;
+}
+
+.stages .menu-card .menu-text h2, .stages .menu-card .menu-text p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.stages .menu-card .menu-text h2 {
+  margin-bottom: 5px;
+}
+
+.stages .menu-card .menu-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-transition: margin .3s ease-in-out;
+  transition: margin .3s ease-in-out;
+  margin-right: -65px;
+}
+
+.stages .menu-card .menu-slider .menu-price {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding: 15px 10px;
+  font-weight: 600;
+}
+
+.stages .menu-card .menu-slider .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99e2d0;
+  width: 65px;
+}
+
+.stages .menu-card .menu-slider .check .fas {
+  font-size: 20px;
+  color: white;
+}
+
+.stages .menu-card:hover .menu-slider {
+  margin-right: 0;
+}
+
+.stages .menu-card:hover .menu-slider .fas {
+  -webkit-animation: rotate .4s .1s ease-in-out forwards;
+          animation: rotate .4s .1s ease-in-out forwards;
+}
+
+.stages .slide-1 {
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+  -webkit-animation: slide-in 1s .6s ease-in-out forwards;
+          animation: slide-in 1s .6s ease-in-out forwards;
+}
+
+.stages .slide-2 {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  -webkit-animation: slide-in 1s .8s ease-in-out forwards;
+          animation: slide-in 1s .8s ease-in-out forwards;
+}
+
+.stages .slide-3 {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  -webkit-animation: slide-in 1s 1s ease-in-out forwards;
+          animation: slide-in 1s 1s ease-in-out forwards;
+}
+
+.stages .slide-4 {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  -webkit-animation: slide-in 1s 1.2s ease-in-out forwards;
+          animation: slide-in 1s 1.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes slide-in {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    color: #9356dc;
+  }
+  50% {
+    color: #ff79da;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: #9356dc;
+  }
+  50% {
+    color: #ff79da;
+  }
+}
+
+.loader-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 2;
+  pointer-events: none;
+  -webkit-animation: disappear 3s ease-out forwards;
+          animation: disappear 3s ease-out forwards;
+}
+
+.loader {
+  position: absolute;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader i {
+  font-size: 70px;
+  margin: 0 10px;
+}
+
+.loader .d1 {
+  color: #ff79da;
+  -webkit-animation: bounce .5s ease-in-out infinite alternate;
+          animation: bounce .5s ease-in-out infinite alternate;
+}
+
+.loader .d2 {
+  color: #99e2d0;
+  -webkit-animation: bounce .5s .1s ease-in-out infinite alternate;
+          animation: bounce .5s .1s ease-in-out infinite alternate;
+}
+
+.loader .d3 {
+  color: #ff79da;
+  -webkit-animation: bounce .5s .2s ease-in-out infinite alternate;
+          animation: bounce .5s .2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  40% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    color: #9356dc;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  40% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    color: #9356dc;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
 }
 
 .header {
@@ -224,11 +525,22 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 20px 0;
+  max-height: 30px;
 }
 
 .header .header-logo {
   width: 40%;
+  max-width: 300px;
+}
+
+.header .back-arrow {
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
 }
 
 footer {
@@ -355,6 +667,105 @@ footer .footer-content a i {
   }
   .restaurants .restaurant-cards .restaurant-card {
     width: 45%;
+  }
+}
+
+.banner {
+  height: 30%;
+  max-height: 300px;
+}
+
+.banner img {
+  height: 100%;
+  max-height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+  padding: 0 20px;
+  background-color: #F2F2F2;
+  border-radius: 35px 35px 0 0;
+}
+
+.menu .menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+.menu .menu-stage {
+  margin-bottom: 50px;
+}
+
+.menu .menu-stage .stage-title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.menu .menu-stage .stage-title span {
+  border-bottom: solid 3px #99e2d0;
+  padding-bottom: 5px;
+}
+
+.menu .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 90px;
+}
+
+.menu .order a {
+  padding: 16px 50px;
+}
+
+@media (min-width: 992px) {
+  .menu .menu-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu .menu-header h3 {
+    font-size: 40px;
+  }
+  .menu .menu-header .heart {
+    font-size: 32px;
+    margin-left: 50px;
+  }
+  .menu .stages {
+    margin: 20px 30px;
+  }
+  .menu .stages .stage-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .menu .stages .menu-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .stages .menu-cards .menu-card {
+    width: 33%;
   }
 }
 /*# sourceMappingURL=main.css.map */
