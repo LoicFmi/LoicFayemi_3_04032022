@@ -111,7 +111,6 @@
         right: 10px;
     }
     & .fas {
-        // transition: opacity .3s ease-in;
         color: $colour-secondary;
         opacity: 0;
     }
@@ -227,10 +226,6 @@
     }
     50% {
         color: $colour-secondary;
-        opacity: 0.5;
-    }
-    70% {
-        opacity: 0.9;
     }
     100% {
         color: $colour-primary;
