@@ -111,21 +111,14 @@
         right: 10px;
     }
     & .fas {
-        transition: opacity .3s ease-in;
-        color: $colour-primary;
+        // transition: opacity .3s ease-in;
+        color: $colour-secondary;
         opacity: 0;
     }
 }
 
 .heart:hover .fas {
-    opacity: 1;
-    animation: color-change 2s .5s ease-in-out infinite;
-
-}
-
-.heart:hover .far {
-    animation: color-change 2s .5s ease-in-out infinite;
-
+    animation: color-change 1s .5s ease-in-out forwards;
 }
 
 
@@ -230,9 +223,17 @@
 
 @keyframes color-change {
     0% {
-        color: $colour-primary;
+        opacity: 0;
     }
     50% {
         color: $colour-secondary;
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    100% {
+        color: $colour-primary;
+        opacity: 1;
     }
 }
