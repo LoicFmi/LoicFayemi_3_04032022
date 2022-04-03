@@ -77,8 +77,12 @@
             & .menu-cards {
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
                 & .menu-card {
                     width: 33%;
+                }
+                & .menu-card-4 {
+                    width: 50%;
                 }
             }
         }

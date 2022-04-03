@@ -235,7 +235,7 @@ h3 {
   opacity: 0;
 }
 
-.stages .menu-card {
+.stages .menu-card, .stages .menu-card-4 {
   background-color: white;
   border-radius: 15px;
   -webkit-box-shadow: 0px 2px 10px lightgrey;
@@ -256,22 +256,22 @@ h3 {
   cursor: pointer;
 }
 
-.stages .menu-card .menu-text {
+.stages .menu-card .menu-text, .stages .menu-card-4 .menu-text {
   overflow: hidden;
   padding: 15px 10px;
 }
 
-.stages .menu-card .menu-text h2, .stages .menu-card .menu-text p {
+.stages .menu-card .menu-text h2, .stages .menu-card .menu-text p, .stages .menu-card-4 .menu-text h2, .stages .menu-card-4 .menu-text p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.stages .menu-card .menu-text h2 {
+.stages .menu-card .menu-text h2, .stages .menu-card-4 .menu-text h2 {
   margin-bottom: 5px;
 }
 
-.stages .menu-card .menu-slider {
+.stages .menu-card .menu-slider, .stages .menu-card-4 .menu-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +281,7 @@ h3 {
   margin-right: -65px;
 }
 
-.stages .menu-card .menu-slider .menu-price {
+.stages .menu-card .menu-slider .menu-price, .stages .menu-card-4 .menu-slider .menu-price {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -289,7 +289,7 @@ h3 {
   font-weight: 600;
 }
 
-.stages .menu-card .menu-slider .check {
+.stages .menu-card .menu-slider .check, .stages .menu-card-4 .menu-slider .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,16 +303,16 @@ h3 {
   width: 65px;
 }
 
-.stages .menu-card .menu-slider .check .fas {
+.stages .menu-card .menu-slider .check .fas, .stages .menu-card-4 .menu-slider .check .fas {
   font-size: 20px;
   color: white;
 }
 
-.stages .menu-card:hover .menu-slider {
+.stages .menu-card:hover .menu-slider, .stages .menu-card-4:hover .menu-slider {
   margin-right: 0;
 }
 
-.stages .menu-card:hover .menu-slider .fas {
+.stages .menu-card:hover .menu-slider .fas, .stages .menu-card-4:hover .menu-slider .fas {
   -webkit-animation: rotate .4s .1s ease-in-out forwards;
           animation: rotate .4s .1s ease-in-out forwards;
 }
@@ -343,6 +343,13 @@ h3 {
           transform: translateY(20%);
   -webkit-animation: slide-in 1s 1.2s ease-in-out forwards;
           animation: slide-in 1s 1.2s ease-in-out forwards;
+}
+
+.stages .slide-5 {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  -webkit-animation: slide-in 1s 1.4s ease-in-out forwards;
+          animation: slide-in 1s 1.4s ease-in-out forwards;
 }
 
 @-webkit-keyframes slide-in {
@@ -769,9 +776,14 @@ footer .footer-content a i {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .menu .stages .menu-cards .menu-card {
     width: 33%;
+  }
+  .menu .stages .menu-cards .menu-card-4 {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=main.css.map */
