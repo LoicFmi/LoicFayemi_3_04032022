@@ -669,7 +669,7 @@ footer .footer-content a i {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .functioning, .restaurants-content {
     margin: auto;
     max-width: 1440px;
