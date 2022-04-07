@@ -624,10 +624,12 @@ footer .footer-content a i {
           box-shadow: 0px -2px 5px grey;
 }
 
-.location p {
-  color: #353535;
+.location .city {
+  border: none;
+  background-color: transparent;
   margin-left: 15px;
   font-weight: 600;
+  width: 130px;
 }
 
 .introduction {
