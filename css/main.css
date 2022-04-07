@@ -393,6 +393,15 @@ h3 {
   50% {
     color: #ff79da;
   }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
   100% {
     color: #9356dc;
     opacity: 1;
@@ -405,6 +414,15 @@ h3 {
   }
   50% {
     color: #ff79da;
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     color: #9356dc;

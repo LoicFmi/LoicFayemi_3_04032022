@@ -227,6 +227,13 @@
     50% {
         color: $colour-secondary;
     }
+    70% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1.2);
+    }
     100% {
         color: $colour-primary;
         opacity: 1;
