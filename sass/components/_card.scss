@@ -116,9 +116,15 @@
     }
 }
 
-.heart:hover .fas {
+.heart:hover {
+    & .fas {
     animation: color-change 1s ease-in-out forwards;
+    }
+    & .far {
+    animation: color-change 1s ease-in-out forwards;
+    }
 }
+
 
 
 // Menu

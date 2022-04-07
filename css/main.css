@@ -223,6 +223,11 @@ h3 {
           animation: color-change 1s ease-in-out forwards;
 }
 
+.heart:hover .far {
+  -webkit-animation: color-change 1s ease-in-out forwards;
+          animation: color-change 1s ease-in-out forwards;
+}
+
 .stages {
   margin-bottom: 40px;
 }
