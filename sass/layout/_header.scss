@@ -4,10 +4,12 @@
     align-items: center;
     margin: 20px 0;
     max-height: 30px;
+
     & .header-logo {
-    width: 40%;
-    max-width: 300px;
+        width: 40%;
+        max-width: 300px;
     }
+
     & .back-arrow {
         font-size: 20px;
         position: absolute;
