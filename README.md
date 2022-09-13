@@ -1,3 +1,3 @@
-# LoicFayemi_3_04032022
+# OCP3-OhMyFood
 
 My 3rd Openclassrooms project : Model integration of Ohmyfood with CSS animations
