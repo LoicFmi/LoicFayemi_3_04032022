@@ -15,24 +15,27 @@
 
 .loader {
     position: absolute;
-    border-radius: 50%;
     width: 500px;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     & i {
         font-size: 70px;
         margin: 0 10px;
     }
+
     & .d1 {
         color: $colour-secondary;
         animation: bounce .5s ease-in-out infinite alternate;
     }
+
     & .d2 {
         color: $colour-tertiary;
         animation: bounce .5s .1s ease-in-out infinite alternate;
     }
+
     & .d3 {
         color: $colour-secondary;
         animation: bounce .5s .2s ease-in-out infinite alternate;
@@ -43,9 +46,11 @@
     0% {
         opacity: 1;
     }
+
     80% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -55,9 +60,11 @@
     0% {
         transform: translateY(20px);
     }
+
     40% {
         transform: translateY(20px);
     }
+
     100% {
         color: $colour-primary;
         transform: translateY(-20px);

@@ -5,10 +5,13 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px -2px 5px grey;
-    & p {
-        color: #353535;
+
+    & .city {
+        border: none;
+        background-color: transparent;
         margin-left: 15px;
         font-weight: 600;
+        width: 130px;
     }
 }
 
@@ -16,15 +19,18 @@
     background-color: #F2F2F2;
     text-align: center;
     padding: 40px 10px;
+
     & h1 {
         margin: 0 30px;
     }
+
     & p {
         margin: 0 15px;
         font-size: 18px;
         font-weight: 300;
         padding-top: 20px;
     }
+
     & .explore {
         margin: 40px 0 30px 0;
     }
@@ -32,6 +38,7 @@
 
 .functioning {
     padding: 50px 20px;
+
     & h1 {
         margin-bottom: 30px;
     }
@@ -40,6 +47,7 @@
 .restaurants {
     padding: 50px 20px;
     background-color: #F2F2F2;
+
     & h1 {
         margin-bottom: 30px;
     }
@@ -47,29 +55,24 @@
 }
 
 
-// Tablet
-
-@media screen and (min-width: 768px) {
-
-}
-
-
 // Desktop
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
 
 
-    .functioning, .restaurants-content {
+    .functioning,
+    .restaurants-content {
         margin: auto;
         max-width: 1440px;
     }
 
     .functioning {
         & .functioning-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
+
         & .functioning-card {
             width: 30%;
         }
@@ -80,6 +83,7 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+
             & .restaurant-card {
                 width: 48%;
             }
@@ -87,4 +91,3 @@
     }
 
 }
-
